@@ -3141,7 +3141,9 @@ class _DayItemState extends State<_DayItem> {
     }
 
     final String dayText = localizations.formatDecimal(widget.day.day);
-    final String cellText = dayText;
+    final bool showBookingName =
+        widget.bookingLabel != null && widget.bookingLabel!.isNotEmpty;
+    final String cellText = showBookingName ? widget.bookingLabel! : dayText;
 
     // We want the day of month to be spoken first irrespective of the
     // locale-specific preferences or TextDirection. This is because
@@ -3165,7 +3167,7 @@ class _DayItemState extends State<_DayItem> {
         label: semanticLabel,
         selected: widget.isBooked,
         child: Padding(
-          padding: const EdgeInsets.only(top: 8),
+          padding: const EdgeInsets.only(left: 4, right: 4),
           child: ExcludeSemantics(
             child: Text(
               cellText,

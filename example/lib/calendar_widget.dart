@@ -1,4 +1,4 @@
-import 'package:booking_callendar/callendar.dart';
+import 'package:booking_calendar/callendar.dart';
 import 'package:flutter/material.dart';
 
 class CalendarWidget extends StatefulWidget {
@@ -13,7 +13,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
     BookedDateRange(
       range: DateTimeRange(
         start: DateTime(2026, 5, 15),
-        end: DateTime(2027, 5, 20),
+        end: DateTime(2026, 5, 20),
       ),
       bookedBy: 'William Brown',
       guestCount: 3,
@@ -21,28 +21,28 @@ class _CalendarWidgetState extends State<CalendarWidget> {
       avatarUrl:
           'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200',
     ),
-    // BookedDateRange(
-    //   range: DateTimeRange(
-    //     start: DateTime(2026, 5, 18),
-    //     end: DateTime(2026, 5, 22),
-    //   ),
-    //   bookedBy: 'Alex Johnson',
-    //   guestCount: 3,
-    //   bookingId: 'RES-10542',
-    //   avatarUrl:
-    //       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200',
-    // ),
-    // BookedDateRange(
-    //   range: DateTimeRange(
-    //     start: DateTime(2026, 6, 2),
-    //     end: DateTime(2026, 6, 5),
-    //   ),
-    //   bookedBy: 'Taylor Smith',
-    //   guestCount: 2,
-    //   bookingId: 'RES-10877',
-    //   avatarUrl:
-    //       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200',
-    // ),
+    BookedDateRange(
+      range: DateTimeRange(
+        start: DateTime(2026, 5, 27),
+        end: DateTime(2026, 6, 09),
+      ),
+      bookedBy: 'Alex Johnson',
+      guestCount: 3,
+      bookingId: 'RES-10542',
+      avatarUrl:
+          'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200',
+    ),
+    BookedDateRange(
+      range: DateTimeRange(
+        start: DateTime(2026, 6, 15),
+        end: DateTime(2026, 6, 18),
+      ),
+      bookedBy: 'Taylor Smith',
+      guestCount: 2,
+      bookingId: 'RES-10877',
+      avatarUrl:
+          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200',
+    ),
   ];
 
   List<BookedDateRange> _bookedDateRanges = const <BookedDateRange>[];

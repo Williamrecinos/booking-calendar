@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   # Local package under development.
-  booking_callendar:
+  booking_calendar:
     path: ../
 
 dev_dependencies:
