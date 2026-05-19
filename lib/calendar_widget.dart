@@ -1,5 +1,6 @@
-import 'package:booking_callendar/callendar.dart';
 import 'package:flutter/material.dart';
+
+import 'callendar.dart';
 
 class CalendarWidget extends StatefulWidget {
   const CalendarWidget({super.key});
