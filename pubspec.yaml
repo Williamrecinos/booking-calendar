@@ -1,4 +1,4 @@
-name: callendar
+name: booking_callendar
 description: "A Flutter package that provides a customizable calendar widget for booking and scheduling purposes. It allows users to select date ranges, view booked dates, and customize the appearance of the calendar to fit their application's design. The package is designed to be flexible and easy to integrate into any Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
